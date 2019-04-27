@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaNaMao.Shared
+namespace TaNaMao.Console
 {
-    public class Class1
+    public class Program
     {
+        static void Main(string[] args)
+        {
+          
+        }
     }
 }

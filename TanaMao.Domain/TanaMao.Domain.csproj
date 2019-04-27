@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Flunt, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flunt.1.0.3\lib\netstandard2.0\Flunt.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,22 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gerencia\Entidades\Cliente.cs" />
-    <Compile Include="Gerencia\Entidades\Reserva.cs" />
-    <Compile Include="Gerencia\Repositories\IClienteRepository.cs" />
-    <Compile Include="Gerencia\Repositories\IReservaRepository.cs" />
+    <Compile Include="Gerencia\Entity\Cliente.cs" />
+    <Compile Include="Gerencia\Entity\Produto.cs" />
+    <Compile Include="Gerencia\Entity\Reserva.cs" />
+    <Compile Include="Gerencia\Repository\IClienteRepository.cs" />
+    <Compile Include="Gerencia\Repository\IReservaRepository.cs" />
+    <Compile Include="Gerencia\ValueObject\Descricao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Cliente\" />
     <Folder Include="Entrega\" />
-    <Folder Include="Gerencia\ValueObjects\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TaNaMao.Shared\TaNaMao.Shared.csproj">
       <Project>{CFFD4FD3-F35F-45A6-BCC9-ECBB049A29BA}</Project>
       <Name>TaNaMao.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

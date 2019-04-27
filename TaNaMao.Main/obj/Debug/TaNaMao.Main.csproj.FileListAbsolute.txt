@@ -1,0 +1,11 @@
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TaNaMao.Main.exe.config
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TaNaMao.Main.exe
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TaNaMao.Main.pdb
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\obj\Debug\TaNaMao.Main.csproj.CoreCompileInputs.cache
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\obj\Debug\TaNaMao.Main.exe
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\obj\Debug\TaNaMao.Main.pdb
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TanaMao.Domain.dll
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TaNaMao.Shared.dll
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TanaMao.Domain.pdb
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\bin\Debug\TaNaMao.Shared.pdb
+C:\Users\Lab\Desktop\tanamao\TaNaMao.Main\obj\Debug\TaNaMao.Main.csprojResolveAssemblyReference.cache

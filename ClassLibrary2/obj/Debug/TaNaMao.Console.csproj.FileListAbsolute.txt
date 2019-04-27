@@ -1,0 +1,6 @@
+C:\Users\Lab\Desktop\tanamao\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\Lab\Desktop\tanamao\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Lab\Desktop\tanamao\ClassLibrary2\obj\Debug\TaNaMao.Console.csproj.CoreCompileInputs.cache
+C:\Users\Lab\Desktop\tanamao\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\Lab\Desktop\tanamao\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+C:\Users\Lab\Desktop\tanamao\ClassLibrary2\obj\Debug\TaNaMao.Console.csprojResolveAssemblyReference.cache
