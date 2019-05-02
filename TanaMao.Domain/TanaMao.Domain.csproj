@@ -33,6 +33,7 @@
     <Reference Include="Flunt, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Flunt.1.0.3\lib\netstandard2.0\Flunt.dll</HintPath>
     </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,9 +47,15 @@
     <Compile Include="Gerencia\Entity\Cliente.cs" />
     <Compile Include="Gerencia\Entity\Produto.cs" />
     <Compile Include="Gerencia\Entity\Reserva.cs" />
+    <Compile Include="Gerencia\Enum\TipoProdutoEnum.cs" />
     <Compile Include="Gerencia\Repository\IClienteRepository.cs" />
+    <Compile Include="Gerencia\Repository\IProdutoRepository.cs" />
     <Compile Include="Gerencia\Repository\IReservaRepository.cs" />
     <Compile Include="Gerencia\ValueObject\Descricao.cs" />
+    <Compile Include="Gerencia\ValueObject\InformacaoNutricional.cs" />
+    <Compile Include="Gerencia\ValueObject\Nome.cs" />
+    <Compile Include="Gerencia\ValueObject\Periodo.cs" />
+    <Compile Include="Gerencia\ValueObject\Preco.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

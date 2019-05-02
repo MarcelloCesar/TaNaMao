@@ -9,9 +9,9 @@ using TaNaMao.Shared.ValueObject;
 
 namespace TanaMao.Domain.Gerencia.ValueObjects
 {
-    public class Descricao : ValueObject
+    public class Descricao : TaNaMao.Shared.ValueObject.ValueObject
     {
-        public string TextoDescricao { get; private set; }
+        public string TextoDescricao { get; set; }
 
         public Descricao(String textoDescricao)
         {

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaNaMao.Shared.Entities;
 
-namespace TanaMao.Domain.Gerencia.Entidades
+namespace TanaMao.Domain.Gerencia.Repository
 {
-    public class Cliente : Entity
+    public interface IProdutoRepository
     {
-       
+        Produto GetById(Guid id);
     }
 }
