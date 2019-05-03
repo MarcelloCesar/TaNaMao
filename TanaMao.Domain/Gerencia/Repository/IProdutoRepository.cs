@@ -11,6 +11,7 @@ namespace TanaMao.Domain.Gerencia.Repository
     {
         Produto GetById(Guid id);
         IList<Produto> GetProdutos(List<Produto> ids);
-
+        void Save(Produto produto);
+        void Delete(Produto produto);
     }
 }

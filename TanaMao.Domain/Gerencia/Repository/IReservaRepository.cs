@@ -11,5 +11,8 @@ namespace TanaMao.Domain.Gerencia.Repositories
     {
         Reserva GetById(Guid id);
         IList<Reserva> GetReservas(List<Guid> ids);
+        void Save(Reserva reserva);
+        void Delete(Reserva reserva);
+
     }
 }
