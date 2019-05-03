@@ -11,5 +11,6 @@ namespace TanaMao.Domain.Gerencia.Repositories
     {
         Cliente GetById(Guid id);
         IList<Cliente> GetClientes(List<Cliente> ids);
+
     }
 }
