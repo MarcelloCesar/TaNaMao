@@ -8,32 +8,32 @@ namespace TaNaMao.Tests.Gerencia.ValueObject
     public class DescricaoTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TesteValido()
         {
             var desc1 = new Descricao("Este produto pode ter reação alérgica");            
             Assert.IsTrue(desc1.Valid);
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void TesteTamanho()
         {
-            var desc2 = new Descricao("Este produto não pode ser vendido para menores de 18 anos");
-            Assert.IsTrue(desc2.Valid);
+            var desc2 = new Descricao("Este");
+            Assert.IsFalse(desc2.Valid);
         }
 
         [TestMethod]
-        public void TestMethod3()
+        public void TesteCaractereInvalido()
         {
             var desc3 = new Descricao("Este produto não pode ser vendido para menores de 18 anos#");
 
-            Assert.IsTrue(desc3.Valid);
+            Assert.IsFalse(desc3.Valid);
         }
 
         [TestMethod]
-        public void TestMethod4()
+        public void TesteVazio()
         {
             var desc4 = new Descricao("         ");
-            Assert.IsTrue(desc4.Valid);
+            Assert.IsFalse(desc4.Valid);
         }
     }
 }
