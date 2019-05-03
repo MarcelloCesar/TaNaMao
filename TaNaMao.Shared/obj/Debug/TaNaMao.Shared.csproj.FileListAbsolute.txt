@@ -199,8 +199,8 @@ C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\bin\Debug\System.Xml.XmlSeri
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\bin\Debug\System.Xml.XPath.dll
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\bin\Debug\Flunt.dll
-C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\obj\Debug\TaNaMao.Shared.csprojAssemblyReference.cache
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\obj\Debug\TaNaMao.Shared.csproj.CoreCompileInputs.cache
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\obj\Debug\TaNaMao.Shared.csproj.CopyComplete
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\obj\Debug\TaNaMao.Shared.dll
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\obj\Debug\TaNaMao.Shared.pdb
+C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Shared\obj\Debug\TaNaMao.Shared.csprojAssemblyReference.cache

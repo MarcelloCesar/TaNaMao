@@ -18,7 +18,53 @@ namespace TaNaMao.Main
         
         static void Main(string[] args)
         {
-                        
+            //------ Cadastrar novo produto
+            Preco precoProduto = new Preco(18, "R$");
+            Descricao descProduto = new Descricao("Acompanha: Alface, tomate, rúcula");
+            Produto produto = new Produto(
+                "Salada Silvestre",
+                descProduto,
+                precoProduto,
+                TipoProdutoEnum.Entrada
+            );
+            //Torna o produto disponivel
+            produto.TornarDisponivel(); 
+
+            var fakeProdutoRepository = new FakeProdutoRepository();
+            fakeProdutoRepository.Save(produto);
+            
+
+            //------ Cadastrar cliente 
+            Nome nomeCliente = new Nome("Marcello","Queiroz");
+            Cliente cliente = new Cliente(
+                nomeCliente,
+                "M",
+                "34547158",
+                "Rua Carmelita",
+                19
+            );
+
+            var fakeClienteReposiory = new FakeClienteRepository();
+            fakeClienteReposiory.Save(cliente);
+
+            //------ Gerar uma reserva
+            //Buscar o cliente no banco
+            Cliente clienteReserva = fakeClienteReposiory.GetById(Guid.NewGuid());
+
+            //Define o horario da reserva
+            Periodo periodoReserva = new Periodo(
+                DateTime.Now,
+                new DateTime(2019, 5, 3, 22, 00, 00)
+            );
+
+            Reserva novaReserva = new Reserva(
+                34, 
+                clienteReserva,
+                periodoReserva
+            );
+
+            var fakeReservaRepository = new FakeReservaRepository();
+            fakeReservaRepository.Save(novaReserva);
         }
     }
 
@@ -58,7 +104,13 @@ namespace TaNaMao.Main
             // É só um teste, as informações nao sao veridicas
             return new Reserva(
                14,               
-               new Cliente(),
+               new Cliente(
+                   new Nome("Bruno", "Silva"),
+                   "M",
+                   "996587458",
+                   "Rua das Orquídeas",
+                   19
+               ),
                new Periodo(DateTime.Now, DateTime.Now)
            );
         }
@@ -88,7 +140,13 @@ namespace TaNaMao.Main
 
         public Cliente GetById(Guid id)
         {
-            return new Cliente();
+            return new Cliente(
+                new Nome("Isabella", "Yamashita"),
+                   "F",
+                   "9965547458",
+                   "Rua das Flores",
+                   35
+            );
         }
 
         public IList<Cliente> GetClientes(List<Cliente> ids)
@@ -101,7 +159,4 @@ namespace TaNaMao.Main
             throw new NotImplementedException();
         }
     }
-
-
-
 }

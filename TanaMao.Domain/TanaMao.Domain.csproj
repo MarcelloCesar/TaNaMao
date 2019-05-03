@@ -52,7 +52,6 @@
     <Compile Include="Gerencia\Repository\IProdutoRepository.cs" />
     <Compile Include="Gerencia\Repository\IReservaRepository.cs" />
     <Compile Include="Gerencia\ValueObject\Descricao.cs" />
-    <Compile Include="Gerencia\ValueObject\InformacaoNutricional.cs" />
     <Compile Include="Gerencia\ValueObject\Nome.cs" />
     <Compile Include="Gerencia\ValueObject\Periodo.cs" />
     <Compile Include="Gerencia\ValueObject\Preco.cs" />
