@@ -18,9 +18,27 @@ namespace TanaMao.Domain.Gerencia.Entidades
         public string NomeProduto { get; private set; }
         public TipoProdutoEnum TipoProduto { get; private set; }
 
-        public Produto()
+        public Produto(
+            string nome,
+            Descricao desc,
+            Preco val,
+            TipoProdutoEnum tipo
+        )
         {
+            NomeProduto = nome;
+            DescricaoProduto = desc;
+            PrecoProduto = val;
+            TipoProduto = tipo;
+        }
 
+        public void TornarDisponivel()
+        {
+            Disponivel = true;
+        }
+
+        public void TornarIndisponivel()
+        {
+            Disponivel = false;
         }
     }
 }

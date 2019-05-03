@@ -13,7 +13,25 @@ namespace TanaMao.Domain.Gerencia.Entidades
         public Periodo PeriodoReserva { get; private set; }
         public int NumeroMesa { get; private set; }
         public Cliente ClienteReserva { get; private set;}
-                 
+        public DateTime DataConfirmacao { get; private set; }
+        public bool confirmado;
+
+        public Reserva(
+            int mesa,
+            Cliente cliente,
+            Periodo Periodo
+        )
+        {
+            NumeroMesa = mesa;
+            ClienteReserva = cliente;
+            PeriodoReserva = Periodo;
+        }
+
+        public void ConfirmarReserva()
+        {
+            confirmado = true;
+            DataConfirmacao = DateTime.Now;
+        }
 
     }
 }
