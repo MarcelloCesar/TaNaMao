@@ -14,7 +14,7 @@ namespace TanaMao.Domain.Gerencia.Entidades
         public int NumeroMesa { get; private set; }
         public Cliente ClienteReserva { get; private set;}
         public DateTime DataConfirmacao { get; private set; }
-        public bool confirmado;
+        public bool Confirmado;
 
         public Reserva(
             int mesa,
@@ -29,7 +29,7 @@ namespace TanaMao.Domain.Gerencia.Entidades
 
         public void ConfirmarReserva()
         {
-            confirmado = true;
+            Confirmado = true;
             DataConfirmacao = DateTime.Now;
         }
 

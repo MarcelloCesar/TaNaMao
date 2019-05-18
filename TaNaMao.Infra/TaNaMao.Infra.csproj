@@ -48,9 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\GerenciaDataContext.cs" />
+    <Compile Include="Mappings\ClienteMap.cs" />
+    <Compile Include="Mappings\ProdutoMap.cs" />
+    <Compile Include="Mappings\ReservaMap.cs" />
     <Compile Include="Migrations\201905102352204_V1.cs" />
     <Compile Include="Migrations\201905102352204_V1.Designer.cs">
       <DependentUpon>201905102352204_V1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905172356011_v2.cs" />
+    <Compile Include="Migrations\201905172356011_v2.Designer.cs">
+      <DependentUpon>201905172356011_v2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +67,10 @@
       <Project>{C9753355-3F6F-4268-8E1A-EE7FD8CCD45B}</Project>
       <Name>TanaMao.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TaNaMao.Shared\TaNaMao.Shared.csproj">
+      <Project>{CFFD4FD3-F35F-45A6-BCC9-ECBB049A29BA}</Project>
+      <Name>TaNaMao.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -68,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905102352204_V1.resx">
       <DependentUpon>201905102352204_V1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905172356011_v2.resx">
+      <DependentUpon>201905172356011_v2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
