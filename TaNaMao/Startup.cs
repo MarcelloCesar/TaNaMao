@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using TanaMao.Domain.Gerencia.Repositories;
 using TanaMao.Domain.Gerencia.Repository;
 using TaNaMao.Infra.Context;
 using TaNaMao.Infra.Repositories;
@@ -20,6 +21,8 @@ namespace TaNaMao
         {
             services.AddScoped<GerenciaDataContext, GerenciaDataContext>();
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
+            services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<IReservaRepository, ReservaRepository>();
             services.AddMvc();
 
         }
@@ -34,11 +37,6 @@ namespace TaNaMao
 
             app.UseMvc();
 
-
-            //app.Run(async (context) =>
-            //{
-            //   await context.Response.WriteAsync("Hello World!");
-            //});
         }
     }
 }
