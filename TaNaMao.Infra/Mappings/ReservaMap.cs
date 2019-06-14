@@ -10,11 +10,6 @@ namespace TaNaMao.Infra.Mappings
 {
     class ReservaMap : EntityTypeConfiguration<Reserva>
     {
-        // public Periodo PeriodoReserva { get; private set; }
-        //public int NumeroMesa { get; private set; }
-        //    public Cliente ClienteReserva { get; private set; }
-        //   public DateTime DataConfirmacao { get; private set; }
-        //  public bool confirmado;
 
         public ReservaMap() {
             ToTable("Reserva");
