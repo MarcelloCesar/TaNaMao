@@ -227,12 +227,6 @@ C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\obj\Debug\TaNaMao.Tests.csproj.Core
 C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\obj\Debug\TaNaMao.Tests.csproj.CopyComplete
 C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\obj\Debug\TaNaMao.Tests.dll
 C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\obj\Debug\TaNaMao.Tests.pdb
-C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
-C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
-C:\Users\Bruno\Desktop\tanamao\TaNaMao.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Laboratorio\Desktop\tanamao\TaNaMao.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

@@ -323,3 +323,12 @@ C:\Users\Lab\Desktop\TaNaMao\TaNaMao\bin\Debug\net461\EntityFramework.dll
 C:\Users\Lab\Desktop\TaNaMao\TaNaMao\bin\Debug\net461\TaNaMao.Infra.pdb
 C:\Users\Lab\Desktop\TaNaMao\TaNaMao\bin\Debug\net461\TaNaMao.Infra.dll.config
 C:\Users\Lab\Desktop\TaNaMao\TaNaMao\bin\Debug\net461\EntityFramework.xml
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.csprojAssemblyReference.cache
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.exe.config
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.RazorAssemblyInfo.cache
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.RazorAssemblyInfo.cs
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.AssemblyInfoInputs.cache
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.AssemblyInfo.cs
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.exe
+C:\Users\Bruno\Desktop\TaNaMao\TaNaMao\obj\Debug\net461\TaNaMao.pdb

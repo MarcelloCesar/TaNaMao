@@ -16,15 +16,15 @@ namespace TaNaMao.Infra.Mappings
         //   public DateTime DataConfirmacao { get; private set; }
         //  public bool confirmado;
 
-        public ReservaMap() { 
-
+        public ReservaMap() {
+            ToTable("Reserva");
             HasKey(x => x.Id);
-            Property(x => x.PeriodoReserva.HorarioInicio);
+            Property(x => x.PeriodoReserva.HorarioInicio).IsRequired();
             Property(x => x.PeriodoReserva.HorarioFinal);
             Property(x => x.NumeroMesa);
             HasRequired(x => x.ClienteReserva);
             Property(x => x.DataConfirmacao);
-            //Property(x => x.Confirmado);
+            Property(x => x.Confirmado);
 
         }
     }

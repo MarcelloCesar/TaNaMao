@@ -30,7 +30,7 @@ namespace TaNaMao.Infra.Repositories
 
         public IList<Produto> GetProdutos(List<Produto> ids)
         {
-            throw new NotImplementedException();
+            return _context.Produtos.ToListAsync();
         }
 
         public void Save(Produto produto)
