@@ -10,7 +10,7 @@ namespace TanaMao.Domain.Gerencia.Repositories
     public interface IReservaRepository
     {
         Reserva GetById(Guid id);
-        IList<Reserva> GetReservas(List<Guid> ids);
+        IList<Reserva> GetReservas();
         void Save(Reserva reserva);
         void Delete(Reserva reserva);
 

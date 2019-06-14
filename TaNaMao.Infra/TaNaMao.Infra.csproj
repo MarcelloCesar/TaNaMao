@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\ProdutoRepository.cs" />
+    <Compile Include="Repositories\ReservaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TanaMao.Domain\TanaMao.Domain.csproj">

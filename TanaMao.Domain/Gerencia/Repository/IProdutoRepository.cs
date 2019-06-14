@@ -10,7 +10,7 @@ namespace TanaMao.Domain.Gerencia.Repository
     public interface IProdutoRepository
     {
         Produto GetById(Guid id);
-        IList<Produto> GetProdutos(List<Produto> ids);
+        IList<Produto> GetProdutos();
         void Save(Produto produto);
         void Delete(Produto produto);
     }

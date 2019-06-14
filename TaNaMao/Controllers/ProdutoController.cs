@@ -25,7 +25,7 @@ namespace TaNaMao.Controllers
         public IEnumerable<Produto> Get()
         {
             //return new string[] { "value1", "value2" };
-            return _repository.GetById();
+            return _repository.GetProdutos();
         }
 
         // GET api/<controller>/5

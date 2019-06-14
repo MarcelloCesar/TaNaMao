@@ -81,7 +81,7 @@ namespace TaNaMao.Main
            );
         }
 
-        public IList<Produto> GetProdutos(List<Produto> ids)
+        public IList<Produto> GetProdutos()
         {
             throw new NotImplementedException();
         }
@@ -115,7 +115,7 @@ namespace TaNaMao.Main
            );
         }
 
-        public IList<Reserva> GetReservas(List<Guid> ids)
+        public IList<Reserva> GetReservas()
         {
             throw new NotImplementedException();
         }
@@ -149,7 +149,7 @@ namespace TaNaMao.Main
             );
         }
 
-        public IList<Cliente> GetClientes(List<Cliente> ids)
+        public IList<Cliente> GetClientes()
         {
             throw new NotImplementedException();
         }

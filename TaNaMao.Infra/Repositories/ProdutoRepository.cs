@@ -23,7 +23,7 @@ namespace TaNaMao.Infra.Repositories
             return _context.Produtos.AsNoTracking().FirstOrDefault(c => c.Id == id);
         }
 
-        public IList<Produto> GetProdutos(List<Produto> ids)
+        public IList<Produto> GetProdutos()
         {
             return _context.Produtos.AsNoTracking().ToList();
         }

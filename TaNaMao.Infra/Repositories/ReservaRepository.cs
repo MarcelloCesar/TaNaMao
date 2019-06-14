@@ -9,34 +9,34 @@ using TaNaMao.Infra.Context;
 
 namespace TaNaMao.Infra.Repositories
 {
-    public class ClienteRepository : IClienteRepository
+    public class ReservaRepository : IReservaRepository
     {
         private readonly GerenciaDataContext _context;
 
-        public ClienteRepository(GerenciaDataContext context)
+        public ReservaRepository(GerenciaDataContext context)
         {
             _context = context;
         }
 
-        public Cliente GetById(Guid id)
+        public Reserva GetById(Guid id)
         {
-            return _context.Clientes.AsNoTracking().FirstOrDefault(c => c.Id == id);
+            return _context.Reservas.AsNoTracking().FirstOrDefault(r => r.Id == id);
         }
 
-        public IList<Cliente> GetClientes()
+        public IList<Reserva> GetReservas()
         {
-            return _context.Clientes.AsNoTracking().ToList();
+            return _context.Reservas.AsNoTracking().ToList();
         }
 
-        public void Save(Cliente cliente)
+        public void Save(Reserva reserva)
         {
-            _context.Clientes.Add(cliente);
+            _context.Reservas.Add(reserva);
             _context.SaveChanges();
         }
 
-        public void Delete(Cliente cliente)
+        public void Delete(Reserva reserva)
         {
-            _context.Clientes.Remove(cliente);
+            _context.Reservas.Remove(reserva);
             _context.SaveChanges();
         }
     }
