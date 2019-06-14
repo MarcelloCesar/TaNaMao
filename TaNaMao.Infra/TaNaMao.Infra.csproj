@@ -64,6 +64,8 @@
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\ProdutoRepository.cs" />
     <Compile Include="Repositories\ReservaRepository.cs" />
+    <Compile Include="Transacao\IUow.cs" />
+    <Compile Include="Transacao\Uow.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TanaMao.Domain\TanaMao.Domain.csproj">
@@ -87,5 +89,6 @@
       <DependentUpon>201905172356011_v2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TanaMao.Domain.Gerencia.Entidades;
 using TanaMao.Domain.Gerencia.Repository;
+using TaNaMao.Infra.Transacao;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,10 +15,12 @@ namespace TaNaMao.Controllers
     public class ProdutoController : Controller
     {
         private readonly IProdutoRepository _repository;
+        private readonly IUow _uow;
 
-        public ProdutoController(IProdutoRepository repository)
+        public ProdutoController(IProdutoRepository repository, IUow uow)
         {
-            _repository = repository;            
+            _repository = repository;
+            _uow = uow;
         }
 
         // GET: api/<controller>
@@ -30,15 +33,26 @@ namespace TaNaMao.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Produto Get(Guid id)
         {
-            return "value";
+            return _repository.GetById(id);
         }
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Produto produto)
         {
+            try
+            {
+                _repository.Save(produto);
+                _uow.Commit();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                _uow.Rollback();
+
+            }
         }
 
         // PUT api/<controller>/5
@@ -49,8 +63,19 @@ namespace TaNaMao.Controllers
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Produto produto)
         {
+            try
+            {
+                _repository.Delete(produto);
+                _uow.Commit();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                _uow.Rollback();
+            }
+  
         }
     }
 }
