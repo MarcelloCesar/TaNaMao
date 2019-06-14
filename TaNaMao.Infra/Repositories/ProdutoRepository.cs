@@ -18,11 +18,6 @@ namespace TaNaMao.Infra.Repositories
             _context = context;
         }
 
-        public void Delete(Produto produto)
-        {
-            throw new NotImplementedException();
-        }
-
         public Produto GetById(Guid id)
         {
             return _context.Produtos.AsNoTracking().FirstOrDefault(c => c.Id == id);
@@ -30,12 +25,20 @@ namespace TaNaMao.Infra.Repositories
 
         public IList<Produto> GetProdutos(List<Produto> ids)
         {
-            return _context.Produtos.ToListAsync();
+            return _context.Produtos.AsNoTracking().ToList();
         }
 
         public void Save(Produto produto)
         {
-            throw new NotImplementedException();
+            _context.Produtos.Add(produto);
+            _context.SaveChanges();
         }
+
+        public void Delete(Produto produto)
+        {
+            _context.Produtos.Remove(produto);
+            _context.SaveChanges();
+        }
+
     }
 }
