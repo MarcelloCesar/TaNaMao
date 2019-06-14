@@ -25,17 +25,19 @@ namespace TaNaMao.Infra.Repositories
 
         public IList<Cliente> GetClientes(List<Cliente> ids)
         {
-            throw new NotImplementedException();
+            return _context.Clientes.AsNoTracking().ToList();
         }
 
         public void Save(Cliente cliente)
         {
-            throw new NotImplementedException();
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
         }
 
         public void Delete(Cliente cliente)
         {
-            throw new NotImplementedException();
+            _context.Clientes.Remove(cliente);
+            _context.SaveChanges();
         }
     }
 }
