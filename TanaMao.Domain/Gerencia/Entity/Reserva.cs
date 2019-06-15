@@ -16,6 +16,9 @@ namespace TanaMao.Domain.Gerencia.Entidades
         public DateTime DataConfirmacao { get; private set; }
         public bool Confirmado;
 
+        // Em função do entity framework
+        protected Reserva(){}
+
         public Reserva(
             int mesa,
             Cliente cliente,

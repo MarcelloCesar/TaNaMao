@@ -12,6 +12,9 @@ namespace TanaMao.Domain.Gerencia.ValueObjects
     public class Descricao : TaNaMao.Shared.ValueObject.ValueObject
     {
         public string TextoDescricao { get; set; }
+^
+        // Em função do entity framework
+        protected Descricao(){}
 
         public Descricao(String textoDescricao)
         {

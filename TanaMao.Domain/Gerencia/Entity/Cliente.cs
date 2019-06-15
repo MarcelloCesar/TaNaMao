@@ -16,6 +16,8 @@ namespace TanaMao.Domain.Gerencia.Entidades
         public string Endereco { get; private set; }
         public int Idade { get; private set; }
 
+        protected Cliente(){}
+
         public Cliente(Nome nomePessoa, string sexo, string telefone, string endereco, int idade)
         {
             NomePessoa = nomePessoa;

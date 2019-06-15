@@ -12,6 +12,9 @@ namespace TanaMao.Domain.Gerencia.ValueObject
         public float Valor { get; set; }
         public string Moeda { get; set; }
 
+        // Em função do entity framework
+        protected Preco(){}
+
         public Preco (float valor, string moeda){
             Valor = valor;
             Moeda = moeda;

@@ -12,6 +12,9 @@ namespace TanaMao.Domain.Gerencia.ValueObject
         public DateTime HorarioInicio { get; set; }
         public DateTime HorarioFinal { get; set; }
 
+        // Em função do entity framework
+        protected Periodo(){}
+
         public Periodo(DateTime inicio, DateTime fim)
         {
             HorarioInicio = inicio;

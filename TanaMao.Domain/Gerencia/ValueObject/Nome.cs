@@ -13,6 +13,9 @@ namespace TanaMao.Domain.Gerencia.ValueObject
         public string NomePessoa { get; set; }
         public string SobrenomePessoa { get; set; }
 
+        // Em função do entity framework
+        protected Nome(){}
+
         public Nome(string nomePessoa, string sobrenomePessoa)
         {
             NomePessoa = nomePessoa;
